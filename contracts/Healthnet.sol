@@ -15,6 +15,11 @@ contract Healthnet {
     uint firstRecord;
   }
 
+  struct DoctorData {
+    address doctorAddress;
+    //todo
+  }
+
   struct HospitalData {
     address hospitalAddress;
     string name;
@@ -58,13 +63,6 @@ contract Healthnet {
     recordCount ++;
     record = RecordData(_patient_number, _hospital_Address, _record_text, _date_time);
     emit NewRecord(recordCount, _patient_number, _hospital_address, _record_text, _date_time);
-  }
-
-  function markPresent(string memory _name, string memory _date) public {
-    address studAddress = msg.sender;
-    studCount ++;
-    atlist[studCount] = AtData(studCount, _name, studAddress, _date);
-    emit AttendanceMarked(studCount, _name, studAddress, _date);
   }
 
 }
