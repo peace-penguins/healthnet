@@ -11,6 +11,7 @@ contract Healthnet {
     string dob;
     uint phone;
     string email;
+    uint firstRecord;
   }
 
   struct HospitalData {
@@ -24,22 +25,22 @@ contract Healthnet {
   }
 
   struct RecordData {
-
+    uint patientNumber;
+    string recordText;
+    string dateTime;
+    uint hospitalNumber;
+    uint next;
+    uint approved;
   }
-  struct AtData {
-    uint id;
-    string name;
-    address studAddress;
-    string date;
-  }
 
-  mapping(uint => AtData) public atlist;
+  mapping(uint => PatientData) public patientList;
+  mapping(uint => HospitalData) public hospitalList;
+  mapping(uint => InsurerData) public insurerList;
 
-  event AttendanceMarked(
-    uint id,
-    string name,
-    address studAddress,
-    string date
+  event NewRecord(
+    uint patientNumber,
+    string recordText,
+    string dateTime
   );
 
   constructor() public {
