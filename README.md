@@ -18,4 +18,10 @@ Insurance Providers can view individual claims made by patients and be sure that
 ## What technology does HealthNet run on?
 HealthNet is built on the Ethereum Blockchain. The smart contract is authored in Solidity and the frontend is written using HTML, CSS and JavaScript.
 
-This application is deployed to the **Ropsten Testnet** and **Matic** will be used in future implementations.
+This application is deployed to the **Ropsten Testnet**. **Matic** will be used in future implementations.
+
+## Meet the team: **Peace Penguins**
+Avinash - https://github.com/avinash-vk  
+Srujan - https://github.com/srujandeshpande  
+Sanskriti - https://github.com/sanskritip  
+Venkat - https://github.com/Venkatavaradan-R  
