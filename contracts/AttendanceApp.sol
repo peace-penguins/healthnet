@@ -8,6 +8,7 @@ contract AttendanceApp {
     string name;
     address studAddress;
     string date;
+    string number;
   }
 
   mapping(uint => AtData) public atlist;
@@ -16,18 +17,19 @@ contract AttendanceApp {
     uint id,
     string name,
     address studAddress,
-    string date
+    string date,
+    string number
   );
 
   constructor() public {
     // Can make the constructor do something here.
   }
 
-  function markPresent(string memory _name, string memory _date) public {
+  function markPresent(string memory _name, string memory _date, string memory _address) public {
     address studAddress = msg.sender;
     studCount ++;
-    atlist[studCount] = AtData(studCount, _name, studAddress, _date);
-    emit AttendanceMarked(studCount, _name, studAddress, _date);
+    atlist[studCount] = AtData(studCount, _name, studAddress, _date, _address);
+    emit AttendanceMarked(studCount, _name, studAddress, _date, _address);
   }
 
 }
