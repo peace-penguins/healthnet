@@ -3,6 +3,12 @@
 
 ### HealthNet is a decentralized solution for quick and hassle free health services, with the idea of creating a common platform for doctors, patients and health insurers.
 
+**Presentation:** https://docs.google.com/presentation/d/1gokGrAjywtkTB6Z4mZokA_LDxa6liXAXoigxd1ZfnwA/edit#slide=id.g77794682d3_1_0
+
+**Video:** https://youtu.be/TDsc2P0cbbQ
+
+**Devfolio Project Link:** https://devfolio.co/submissions/healthnet-1
+
 ## How does HealthNet help?
 HealthNet promotes transparency and efficiency of processing health records and insurance claims while ensuring security and immutability of data to prevent unauthorized access and eliminate fraud.
 
