@@ -58,10 +58,10 @@ contract Healthnet {
     // Can make the constructor do something here.
   }
 
-  function addRecord(uint _patient_number, string memory _record_text, string memory _date_time, uint _hospitalnumber) public {
+  function addRecord(uint _patient_number, string memory _record_text, string memory _date_time) public {
     address _hospital_address = msg.sender;
     recordCount ++;
-    record = RecordData(_patient_number, _hospital_Address, _record_text, _date_time);
+    recordList[recordCount] = RecordData(_patient_number, _hospital_address, _record_text, _date_time, 0, 0);
     emit NewRecord(recordCount, _patient_number, _hospital_address, _record_text, _date_time);
   }
 
